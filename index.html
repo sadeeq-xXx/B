@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>SURVEY SHEET</title>
+    <style>
+    h1
+    {
+        color: rgb(17, 17, 17);
+        font-family: courier;
+        font-size: 2em;
+    }
+    
+    body {
+        background-color: rgb(13, 147, 209);
+    }
+
+    .empty-div{
+        display: inline-block;
+        width: 20%;
+        height: 100px;
+        /* border: 1px solid red; */
+    }
+
+    #main-guy {
+        background-color: rgb(255, 255, 255);
+        width: 60%; 
+        display: inline-block;
+     
+    }
+
+    .header-top {
+        text-align: center;
+    }
+
+    .left-div {
+        width: 45%;
+        display: inline-block;
+        /* border: 1px solid yellow; */
+        text-align: right;
+        margin-left: 30px;
+        margin-bottom:5px;
+    }
+    .right-div {
+        width: 45%;
+        display: inline-block;
+        /* border: 1px solid yellow; */
+        margin-bottom:5px;
+    }
+
+    .form-div {
+
+        padding-top: 30px;
+        /* margin-top: 50px; */
+    }
+
+    .down {
+        /* padding-top: 30px; */
+        margin-top: 50px;
+    }
+    .button {
+     display: block; 
+     text-align: center;
+     /* align-content: center; */
+     /* border: 1px solid black; */
+     /* background-color: red; */
+    }
+    </style>
+    </head>
+<body>
+    <h1 class="header-top"> Survey Form</h1>
+
+    <div class="empty-div"></div>
+    <div id="main-guy">
+            <h5 class="header-top">Let us know we can improve freeCodeCamp</h5>
+                <div class="form-div">
+                    <form action="">
+                        <label for="" class="left-div">
+                                Name:
+                        </label>
+                        <input type="text" placeholder="Enter your name" class="right-div" required>
+                        <label for="" class="left-div">
+                                Email:
+                        </label>
+                        <input type="text" placeholder="Enter your Email" class="right-div" required>
+                        <label for="" class="left-div">
+                                Age:
+                        </label>
+                        <input type="text" placeholder="Age" class="right-div" required>
+                        <label for="" class="left-div">
+                                What best describes your current role?
+                        </label>
+                        <select class="right-div"> 
+                            <option value = "1">student</option>
+                            <option value = "2">employed</option>
+                            <option value = "3">retired</option>
+                            <option value = "4">NIL</option>
+                        </select>
+                        <label for="" class="left-div" style="position: relative;bottom:20px;">
+                            How likely is that you recommend <br> to a friend?</br>
+                        </label>
+                        <div class="right-div down">
+                            <input type="radio" name="Definetly" >definetly <br>
+                            <input type="radio" name="Maybe" >maybe<br>
+                            <input type="radio" name="Not sure">definetly
+                        </div>
+
+                        <label for="" class="left-div">
+                            What do you like most in FCC:
+                        </label>
+                        <select class="right-div">
+                            <option value = "1">community</option>
+                            <option value = "2">simplicity</option>
+                            <option value = "3">examples</option>
+                            <option value = "4">questions</option>
+                        </select>
+                        <label for="" class="left-div;" style="position: relative;bottom:200px;">
+                            Things that should be improved in the future (check all that apply):
+                        </label>
+                        <div class="right-div down">
+                            <input type="checkbox" name="future"> Front-end projects<br>
+                            <input type="checkbox" name="future"> Back-end projects<br>
+                            <input type="checkbox" name="future"> Data Visualisation<br>
+                            <input type="checkbox" name="future"> Challenge<br>
+                            <input type="checkbox" name="future"> Open Source community<br>
+                            <input type="checkbox" name="future"> Gitter help room<br>
+                            <input type="checkbox" name="future"> Videos<br>
+                            <input type="checkbox" name="future"> City Meetups<br>
+                            <input type="checkbox" name="future"> Wiki<br>
+                            <input type="checkbox" name="future"> Forum<br>
+                            <input type="checkbox" name="future"> Additional courses</label>
+                        </div>
+
+                        <div class="left-div down;" style="position: relative; bottom:50px;">
+                            Any comments or suggestions
+                        </div>
+
+                        <div class="right-div down">                     
+                         <textarea rows="4" cols="50" name="comment" form="usrform" style="position: relative; ">
+                         Enter your comment here...</textarea>
+                         
+                        </div>
+
+                        <div class="button">
+                            <button type="submit" class="">submit</button>
+                        </div>
+                    </form>
+                </div>
+
+    </div>
+    <div class="empty-div"></div>
+   </body>
+</html>
+
